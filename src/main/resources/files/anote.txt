@@ -1,0 +1,33 @@
+Droolds is a business logic integration plataform (BLiP).
+It is written in Java. It is an open source project that is backed by JBoss and Red Hat, Inc
+
+- What is rule
+- How to define rules in drools
+- How to write a drools program using Java
+
+--------------------------------------------------------------------------------------
+
+Drools Terminilogy:
+-Rules
+	The heart of the Rules Engine where you specify conditions (if 'a' then 'b').
+	
+- Facts
+	Facts are the data on whitch the rules will act upon. From Java prespective,
+	Facts are the POJO (Plain Old Java Object).
+	
+- Session
+	A Knowledge Session in Drools is the core component to fire the rules.
+	It is the knowledge session that holds all the rules ans other resources.
+	A knowledge Session is created from the knowledgeBase.
+	
+	For the roles engine to work, Facts are inserted into the session and whem ac
+	condition is met, the subsequent rule gets fired. A session is of two types:
+		. Stateless Knowledge Session
+		. Stateful Knowledge Session
+		
+- fonte do tutorial
+http://javainuse.com/spring/spring-boot-drools-hello-world
+		
+- realizar o download do plugin do drools		
+http://download.jboss.org/drools/release/7.5.0.Final/
+	
