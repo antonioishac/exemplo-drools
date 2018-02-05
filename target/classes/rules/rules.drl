@@ -1,0 +1,16 @@
+package rules
+ 
+import br.com.exemplodrools.model.Frete
+
+rule "Caso a distancia for maior que 200km"
+	when 
+		freteObject: Frete(distancia > 200, distancia < 1000)
+	then
+		freteObject.setCalculo(freteObject.getDistancia() * 15);
+	end
+rule "Caso a distancia for maior que 1000km"
+	when 
+		freteObject: Frete(distancia >= 1000)
+	then
+		freteObject.setCalculo(freteObject.getDistancia() * 10);
+	end
